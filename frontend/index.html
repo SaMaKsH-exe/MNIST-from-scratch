@@ -1,0 +1,40 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MNIST Dataset</title>
+		<link rel="stylesheet" href="app.css" />
+		<title>MNIST Dataset</title>
+	</head>
+	<body>
+		<main>
+			<h1>MNIST Dataset</h1>
+			<h3>
+				Draw a Digit and Click Predict, a custom neural network built from
+				scratch only using numpy (Python) will predict the digit
+			</h3>
+
+			<canvas id="myCanvas" width="500" height="500"></canvas>
+			<div class="preview-wrap">
+				<p>28x28 Preview</p>
+				<canvas id="previewCanvas" width="28" height="28"></canvas>
+			</div>
+			<div style="margin-top: 16px; text-align: center">
+				<a
+					href="blog.html"
+					style="color: #58a6ff; text-decoration: none; font-size: 0.9rem"
+					>Learn how it works →</a
+				>
+			</div>
+		</main>
+
+		<button id="clearButton">Clear</button>
+
+		<button id="predictButton">Predict</button>
+		<p id="predictionResult">Prediction: --</p>
+		<script src="canvas.js"></script>
+	</body>
+</html>
